@@ -20,3 +20,7 @@ cd <environment-name>\Scripts\activate.bat
 ```
 (environment-name) C:\Users\HP\project\Iris-API>
 ```
+
+## NOTES!
+
+<p>Please install Docker for Desktop in your OS (Windows, Linux, and MacOS) to get server running app</b>
