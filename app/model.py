@@ -22,9 +22,13 @@ def train_model():
     y_pred = clf.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)
     report = classification_report(y_test, y_pred)
+    
+    # Log the classification report
+    print("Classification Report:")
+    print(report)
 
     if accuracy > 0.9:
         joblib.dump(clf, 'model.joblib')
-        return accuracy, report, True
+        return accuracy, True
     else:
-        return accuracy, report, False
+        return accuracy, False
